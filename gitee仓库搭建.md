@@ -19,7 +19,7 @@
    解决办法：手动修改gitconfig文件的内容
    执行：vi .git/config
    把[remote “origin”] 那一行删掉就好了。
-   重新关联
+   重新关联:git pull origin master --allow-unrelated-histories
  7.上传代码到远程分支：git push origin master
    可能报错：remote: Incorrect username or password ( access token )
    原因：由于之前重置了Git账户的密码，忘记修改计算机的凭据导致这个问题的出现。
